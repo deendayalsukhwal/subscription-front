@@ -1,0 +1,45 @@
+<div class="py-5 text-center">
+    <h1>Subscription Plans</h1>
+</div>
+
+<div class="subscription-cards d-flex align-items-start justify-content-evenly">
+  <!-- Free Plan -->
+  <div class="card w-25">
+        <div class="card-header bg-primary text-light">
+        <h2>Free</h2>
+        <h3>₹ 0 / month</h3>
+        </div>
+        <div class="card-body">
+        <ul style="font-size: 1.25rem; line-height: 2rem; font-weight: 500;">
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+        </div>
+        <div class="card-footer">
+          <button mat-raised-button color="primary" routerLink="/normalUser">Continue with free services</button>
+        </div>
+  </div>
+
+  <!-- Premium 1 Month Plan -->
+  <div class="card w-25">
+    <div class="card-header bg-success text-light">
+      <h2>Premium</h2>
+      <h3>₹ 500 / month</h3>
+    </div>
+    <div class="card-body">
+      <ul style="font-size: 1.25rem; line-height: 2rem; font-weight: 500;">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Premium Feature 1</li>
+        <li>Premium Feature 2</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+       <button mat-raised-button color="primary" (click)="payNow(500)">Subscribe</button>
+    </div>
+  </div>
+
+<!-- <button (click)="payNow()">Pay amount</button> -->
+
